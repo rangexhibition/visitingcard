@@ -1,0 +1,125 @@
+*:not(.card-left *, .card-right *) {
+    background-color: rgb(14, 14, 14);
+}
+
+.card-left{
+    height: 100vh;
+}
+
+.card-left .card,
+.card-right .card{
+    display: flex;
+    border: none;
+    background-color: rgb(14, 14, 14);
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-body{
+    flex: none;
+    color: white;
+}
+
+.card-left .card .img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.img p{
+    position: absolute;
+    font-size: medium;
+    font-style: italic;
+    color: white;
+    bottom: 20px;
+    right: 20px;
+}
+
+.img img {
+    width: 100%;
+}
+
+i, p{
+    height: fit-content;
+}
+
+.socials {
+    height: fit-content;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+i::before{
+    color: yellow;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.height-fit {
+    height: fit-content;
+    width: 100%;
+}
+
+.pl-3 {
+    padding-left: 0.5rem;
+}
+
+.pr-3 {
+    padding-right: 1rem;
+}
+
+.socials p{
+    color: white;
+    height: fit-content;
+    /* margin-right: 15px; */
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.border-right{
+    border-right: 1px solid yellow;
+    text-align: right;
+    color: white;
+}
+
+.border-right a, .border-left a{
+    color: yellow;
+}
+
+@media screen and (max-width: 800px) {
+    .card-left .card .img{
+        width: 60%;
+    }
+    .img p {
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-left .card .img{
+        width: 90%;
+    }
+    .border-left{
+        text-align: center;
+    }
+    .border-right{
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px solid yellow;
+    }
+    .img p {
+        bottom: 0px;
+    }
+    .socials-div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
